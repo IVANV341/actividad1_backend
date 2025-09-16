@@ -1,314 +1,41 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Pokémon</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        .pokemon-card {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            margin-bottom: 20px;
-        }
-        
-        .name-title {
-            color: #2c3e50;
-            font-weight: bold;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        
-        .pokemon-badge {
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            display: inline-block;
-            margin: 5px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .location-icon {
-            color: #e74c3c;
-            font-size: 1.2em;
-        }
-        
-        .childhood-section {
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 8px;
-            border-left: 4px solid #3498db;
-            margin-bottom: 10px;
-        }
-        
-        .teen-section {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            border-left: 4px solid #e74c3c;
-            margin-bottom: 10px;
-        }
-        
-        .family-section {
-            background: linear-gradient(135deg, #74b9ff, #0984e3);
-            color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 15px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <!-- Sección Nombre -->
-                <div class="pokemon-card p-5 text-center">
-                    <h1 class="name-title display-4 mb-4">
-                        Oscar Vera
-                    </h1>
-                    <span class="pokemon-badge">Maestro Pokémon en entrenamiento</span>
-                </div>
-
-                <!-- Sección Origen -->
+<!-- Sección Proyectos Personales -->
                 <div class="pokemon-card p-4">
-                    <h2 class="text-center mb-4">🌍 Mi Región de Origen</h2>
+                    <h2 class="text-center mb-4">🚀 Mis Proyectos Personales</h2>
                     
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="text-center p-3">
-                                <span class="location-icon">📍</span>
-                                <h4 class="mt-2">Ciudad Natal</h4>
-                                <p class="lead">Cúcuta, Norte de Santander</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="text-center p-3">
-                                <span class="location-icon">🗺️</span>
-                                <h4 class="mt-2">País/Región</h4>
-                                <p class="lead">Colombia</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Sección Familia -->
                     <div class="family-section">
-                        <h3 class="text-center mb-3">👨‍👩‍👧‍👦 Mi Equipo Inicial (Familia)</h3>
-                        
-                        <div class="row text-center">
-                            <div class="col-md-4">
-                                <h5>🔥 Entrenador Principal (Papá)</h5>
-                                <p>Ledin Vera</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>💻 Proyecto Principal</h4>
+                                <p class="lead">Página web personal con HTML y CSS</p>
+                                
+                                <h5>🎯 Objetivo del Proyecto</h5>
+                                <p>Crear mi primer sitio web desde cero</p>
                             </div>
                             
-                            <div class="col-md-4">
-                                <h5>💧 Entrenadora Principal (Mamá)</h5>
-                                <p>Zayda Puerto</p>
+                            <div class="col-md-6">
+                                <h4>⚡ Tecnologías Usadas</h4>
+                                <p class="lead">HTML, CSS, Bootstrap</p>
+                                
+                                <h5>📈 Estado Actual</h5>
+                                <p>Completado y funcionando</p>
                             </div>
-                            
-                            <div class="col-md-4">
-                                <h5>⚡ Compañeros de Aventura</h5>
-                                <p>Hijo único - Aventura en solitario</p>
+                        </div>
+                        
+                        <div class="row mt-3">
+                            <div class="col-12">
+                                <h4>🎮 Habilidades Ganadas</h4>
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <span class="pokemon-badge">HTML</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="pokemon-badge">CSS</span>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <span class="pokemon-badge">Diseño Web</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Sección Niñez -->
-                <div class="pokemon-card p-4">
-                    <h2 class="text-center mb-4">🎮 Mis Primeras Aventuras (Niñez)</h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="childhood-section p-3">
-                                <h4 class="text-primary">🎯 Mis Primeros "Pokémon" (Juegos Favoritos)</h4>
-                                <ul class="list-unstyled">
-                                    <li>🚂 Zelda Spirit Tracks</li>
-                                    <li>💎 Pokémon Perla</li>
-                                    <li>🏊‍♂️ Natación</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="childhood-section p-3">
-                                <h4 class="text-success">👫 Mi Primera Liga (Amigos de la Infancia)</h4>
-                                <p>Mi Nintendo DS era mi tesoro secreto - lo escondía en mi maleta del colegio para seguir jugando durante las clases. ¡Era todo un ninja gamer! 🎮</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <div class="childhood-section p-3">
-                                <h4 class="text-warning">🏫 Mi Primer Gimnasio (Colegio/Escuela)</h4>
-                                <p>Colegio Calasanz de Cúcuta</p>
-                                <p><small>Los descansos eran épicos - todos jugábamos Beyblade y las batallas eran legendarias</small></p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="childhood-section p-3">
-                                <h4 class="text-info">⭐ Momento Legendario de mi Niñez</h4>
-                                <p>Las excursiones del colegio eran mi aventura favorita - explorar nuevos lugares y vivir experiencias increíbles fuera del aula</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pokemon-stat-bar mt-4 p-3" style="background: linear-gradient(135deg, #ffecd2, #fcb69f); border-radius: 10px;">
-                        <h5 class="text-center">🌟 Stats de mi Niñez</h5>
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <strong>Diversión</strong><br>
-                                <span class="badge bg-success">Nivel 100</span>
-                            </div>
-                            <div class="col-4">
-                                <strong>Curiosidad</strong><br>
-                                <span class="badge bg-primary">Nivel 95</span>
-                            </div>
-                            <div class="col-4">
-                                <strong>Energía</strong><br>
-                                <span class="badge bg-warning">Nivel 99</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sección Adolescencia -->
-                <div class="pokemon-card p-4">
-                    <h2 class="text-center mb-4">🔥 Mi Evolución (Adolescencia)</h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="teen-section p-3">
-                                <h4 class="text-danger">🎮 Nuevos Juegos Descubiertos</h4>
-                                <ul class="list-unstyled">
-                                    <li>🎯 [Tu juego favorito de adolescente]</li>
-                                    <li>📱 [Otro juego que te gustó]</li>
-                                    <li>🏆 [Hobby o actividad nueva]</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="teen-section p-3">
-                                <h4 class="text-warning">👥 Mi Liga Elite (Amigos Cercanos)</h4>
-                                <p>[Nombres de tus amigos más importantes de la adolescencia o una anécdota divertida de esa época]</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <div class="teen-section p-3">
-                                <h4 class="text-success">💚 Primera Captura del Corazón</h4>
-                                <p>[Tu primer amor/crush o una anécdota romántica divertida, o puedes poner "Aún buscando mi Pokémon complementario"]</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="teen-section p-3">
-                                <h4 class="text-info">⚡ Decisión Importante</h4>
-                                <p>[Alguna decisión importante que tomaste en la adolescencia sobre estudios, intereses, etc.]</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-12">
-                            <div class="teen-section p-3">
-                                <h4 class="text-primary">🌟 Mi Momento de Evolución</h4>
-                                <p>[Cuenta un momento importante de tu adolescencia que te hizo crecer o cambiar como persona]</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pokemon-stat-bar mt-4 p-3" style="background: linear-gradient(135deg, #ff9a9e, #fecfef); border-radius: 10px;">
-                        <h5 class="text-center">🔥 Stats de mi Adolescencia</h5>
-                        <div class="row text-center">
-                            <div class="col-3">
-                                <strong>Rebeldía</strong><br>
-                                <span class="badge bg-danger">Nivel 80</span>
-                            </div>
-                            <div class="col-3">
-                                <strong>Independencia</strong><br>
-                                <span class="badge bg-warning">Nivel 90</span>
-                            </div>
-                            <div class="col-3">
-                                <strong>Confusión</strong><br>
-                                <span class="badge bg-secondary">Nivel 75</span>
-                            </div>
-                            <div class="col-3">
-                                <strong>Crecimiento</strong><br>
-                                <span class="badge bg-success">Nivel 95</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sección Adolescencia -->
-                <div class="pokemon-card p-4 text-center">
-                    <h2 class="mb-4">🔥 Mi Evolución (Adolescencia)</h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4 class="text-danger">🎮 Juego Favorito de Adolescente</h4>
-                            <p class="lead">Final Fantasy 7</p>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <h4 class="text-warning">👥 Mejor Amigo de la Adolescencia</h4>
-                            <p class="lead">Manuel Calderón y Rafael Gómez</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sección Actualidad -->
-                <div class="pokemon-card p-4 text-center">
-                    <h2 class="mb-4">⚡ Mi Estado Actual</h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4 class="text-success">📚 Lo que hago actualmente</h4>
-                            <p class="lead">Estudio Ingeniería de Sistemas</p>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <h4 class="text-primary">🎯 Mi hobby principal</h4>
-                            <p class="lead">Leer y jugar TCG</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sección Aspiraciones -->
-                <div class="pokemon-card p-4 text-center">
-                    <h2 class="mb-4">🌟 Mis Metas Futuras</h2>
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4 class="text-warning">🎯 Mi objetivo profesional</h4>
-                            <p class="lead">Ser autosuficiente y un buen profesional</p>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <h4 class="text-info">💭 Mi sueño personal</h4>
-                            <p class="lead">Ayudar a personas que se esfuerzan por mejorar en esta carrera</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
