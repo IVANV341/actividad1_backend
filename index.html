@@ -12,12 +12,13 @@
             font-family: 'Arial', sans-serif;
         }
         
-        .pokemon-header {
+        .pokemon-card {
             background: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 20px;
         }
         
         .name-title {
@@ -25,17 +26,87 @@
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
+        
+        .pokemon-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .location-icon {
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+        
+        .family-section {
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="pokemon-header p-5 text-center">
+                <!-- Sección Nombre -->
+                <div class="pokemon-card p-5 text-center">
                     <h1 class="name-title display-4 mb-4">
-                        [Oscar Vera]
+                        Oscar Vera
                     </h1>
-                    <p class="lead text-muted">Maestro Pokémon en entrenamiento</p>
+                    <span class="pokemon-badge">Maestro Pokémon en entrenamiento</span>
+                </div>
+
+                <!-- Sección Origen -->
+                <div class="pokemon-card p-4">
+                    <h2 class="text-center mb-4">🌍 Mi Región de Origen</h2>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="text-center p-3">
+                                <span class="location-icon">📍</span>
+                                <h4 class="mt-2">Ciudad Natal</h4>
+                                <p class="lead">Cúcuta, Norte de Santander</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="text-center p-3">
+                                <span class="location-icon">🗺️</span>
+                                <h4 class="mt-2">País/Región</h4>
+                                <p class="lead">Colombia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sección Familia -->
+                    <div class="family-section">
+                        <h3 class="text-center mb-3">👨‍👩‍👧‍👦 Mi Equipo Inicial (Familia)</h3>
+                        
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <h5>🔥 Entrenador Principal (Papá)</h5>
+                                <p>Ledin Vera</p>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <h5>💧 Entrenadora Principal (Mamá)</h5>
+                                <p>Zayda Puerto</p>
+                            </div>
+                            
+                            <div class="col-md-4">
+                                <h5>⚡ Compañeros de Aventura</h5>
+                                <p>Hijo único - Aventura en solitario</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
